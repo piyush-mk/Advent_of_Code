@@ -1,7 +1,7 @@
 import heapq # heapq is a min heap
 maxValue = 0    
 curValue = 0 
-with open("input.txt", "r") as reader:
+with open("input.txt", "r") as reader: 
     for line in reader.readlines():
         line = line.strip()
         if len(line) == 0:
@@ -18,16 +18,16 @@ with open("input.txt", "r") as reader:
  
     for line in reader.readlines():
         line = line.strip()
-        if len(line) == 0:
-            heapq.heappush(h, curValue)
+        if len(line) == 0: 
+            heapq.heappush(h, curValue) # push the current value to the heap
  
             if len(h) > 3:
-                heapq.heappop(h)
+                heapq.heappop(h) # pop the smallest value from the heap
             
             curValue = 0
         else:
-            curValue += int(line)
+            curValue += int(line) # add the current value to the current value
  
-total = sum(h)
+total = sum(h)  # sum the 3 largest values
  
-print(f"The total is: {total}")
+print(f"The total is: {total}") 
