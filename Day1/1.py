@@ -1,5 +1,5 @@
-import heapq
-maxValue = 0
+import heapq # heapq is a min heap
+maxValue = 0    
 curValue = 0 
 with open("input.txt", "r") as reader:
     for line in reader.readlines():
