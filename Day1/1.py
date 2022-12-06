@@ -14,7 +14,7 @@ print(f"The max value was: {maxValue}")
  
 h = []
 curValue = 0
-with open("input.txt", "r") as reader:
+with open("input1.txt", "r") as reader:
  
     for line in reader.readlines():
         line = line.strip()

@@ -13,7 +13,7 @@ def overlaps(line):
   a,b = prep(line)
   return 1 if any(num in a for num in b) else 0
 
-with open("input.txt") as text_file:
+with open("input4.txt") as text_file:
   pairs = text_file.read().strip().split('\n')
   print(sum(map(contains, pairs)))
   print(sum(map(overlaps, pairs)))
