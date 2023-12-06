@@ -68,3 +68,9 @@ print(example_product)
 
 
 #part 2
+
+time=[47986698]
+disance=[400121310111540]
+
+ways_to_win = [calculate_ways_to_win(t, d) for t, d in zip(time, disance)]
+print(ways_to_win)
